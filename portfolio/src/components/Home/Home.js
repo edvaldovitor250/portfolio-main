@@ -14,14 +14,14 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
+                Olá!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
               <h1 className="heading-name">
-                I'M
+                Eu sou
                 <strong className="main-name"> Edvaldo Vitor</strong>
               </h1>
 
@@ -33,7 +33,7 @@ function Home() {
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
                 src={homeLogo}
-                alt="home pic"
+                alt="Imagem principal"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
               />
