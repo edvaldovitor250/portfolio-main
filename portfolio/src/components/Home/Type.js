@@ -9,7 +9,7 @@ function Type() {
           "Software Developer",
           "Freelancer",
           "Web Scrapy",
-          "Open Source Contributor",
+          "Web Developer",
         ],
         autoStart: true,
         loop: true,
