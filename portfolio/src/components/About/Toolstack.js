@@ -6,6 +6,9 @@ import {
     SiIntellijidea,
     SiDocker,
     SiGit,
+    SiSonarqube,
+    SiPycharm,
+
 
 } from "react-icons/si";
 
@@ -17,18 +20,23 @@ function Toolstack() {
                 <SiIntellijidea />
             </Col>
             <Col xs={4} md={2} className="tech-icons">
+                <SiPycharm />
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
                 <SiVisualstudiocode />
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <SiPostman />
             </Col>
-
             <Col xs={4} md={2} className="tech-icons">
                 <SiDocker />
             </Col>
 
             <Col xs={4} md={2} className="tech-icons">
                 <SiGit />
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+                <SiSonarqube />
             </Col>
         </Row>
     );
