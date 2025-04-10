@@ -6,41 +6,47 @@ import {
   SiGit,
   SiVisualstudiocode,
   SiRedis,
+  SiMongodb,
+  SiReact,
+  SiPython,
 } from "react-icons/si";
 import { DiJava } from "react-icons/di";
 
+// Logos locais
 import logoExpedit from "../../Assets/logo-empresas/mascoteExpedit.png";
+import logoKwai from "../../Assets/logo-empresas/logo-kwai-icon.png";
+import logoAge from "../../Assets/logo-empresas/logo-age-consulting.jpg";
 
 function Experience() {
   const experiences = [
     {
       company: "Expedit Lawtech",
       logo: logoExpedit,
-      role: "Desenvolvedor Júnior - Back-end",
+      role: "Desenvolvedor Back-end - Júnior",
       description:
-        "Responsável pelo desenvolvimento e manutenção da API central do sistema de gestão jurídica da Expedit, focando em escalabilidade, integrações eficientes e melhoria contínua das funcionalidades voltadas para escritórios de advocacia e departamentos jurídicos corporativos.",
-      tools: [DiJava, SiSpringboot, SiMysql, SiRedis],
-      period: "02/2024 - Atualmente",
+        "Desenvolvimento de robôs de automação para extração e processamento de dados jurídicos, integração de APIs, tratamento de grandes volumes de dados e otimização de desempenho.",
+      tools: [DiJava, SiSpringboot, SiMysql, SiRedis, SiPython],
+      period: "11/2024 - Atual",
       position: "left",
     },
     {
-      company: "Google Cloud Partner",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg",
-      role: "Engenheiro de Dados - Estágio",
+      company: "Kwai Brasil",
+      logo: logoKwai,
+      role: "Desenvolvedor Full Stack - Freelancer",
       description:
-        "Atuação em projetos de dados na nuvem, construindo pipelines de ETL eficientes, automatizando processos e garantindo qualidade na entrega de dados para ambientes produtivos e analíticos, com integração de múltiplas fontes utilizando Google Cloud Platform.",
-      tools: [SiGit, SiMysql, SiSpringboot],
-      period: "11/2023 - 04/2024",
+        "Desenvolvimento de backend escalável e interfaces web, correções de bugs, integração de APIs, manutenção do Kwai Studio e participação ativa em squads ágeis (Scrum).",
+      tools: [DiJava, SiSpringboot, SiMysql, SiMongodb, SiReact],
+      period: "04/2024 - 08/2024",
       position: "right",
     },
     {
-      company: "Banco Digital Neon",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Neon_logo.png",
-      role: "Desenvolvedor Back-end - Freelancer",
+      company: "Age Consulting",
+      logo: logoAge,
+      role: "Desenvolvedor Java - Freelancer",
       description:
-        "Desenvolvimento de microserviços e integrações para facilitar operações bancárias como emissão de boletos e reconciliação financeira, utilizando arquitetura orientada a eventos e garantindo alta disponibilidade dos serviços financeiros do banco digital.",
-      tools: [DiJava, SiVisualstudiocode],
-      period: "10/2023 - 11/2023",
+        "Criação de uma aplicação Java para otimização de pesquisas e exportação automatizada de dados para Excel, utilizando filtros inteligentes e integração com a API do Google Maps.",
+      tools: [DiJava, SiVisualstudiocode, SiMysql],
+      period: "02/2024 - 06/2024",
       position: "left",
     },
   ];
@@ -78,7 +84,6 @@ function Experience() {
                 }`}
               >
                 <Col md={5} className="text-center">
-                  {/* Card da experiência */}
                   <div
                     className="p-4 rounded-4 shadow card-experience position-relative"
                     style={{
@@ -91,7 +96,6 @@ function Experience() {
                       textAlign: "left",
                     }}
                   >
-                    {/* Cabeçalho */}
                     <div
                       className="d-flex align-items-start mb-3"
                       style={{ justifyContent: "space-between" }}
@@ -104,7 +108,7 @@ function Experience() {
                               backgroundColor: "#c770f0",
                               padding: "3px 8px",
                               borderRadius: "6px",
-                              fontSize: "0.75rem", // ⬅️ Tamanho maior
+                              fontSize: "0.75rem",
                               color: "white",
                               boxShadow: "0 1px 4px rgba(199, 112, 240, 0.5)",
                               fontWeight: "500",
@@ -151,7 +155,6 @@ function Experience() {
                       </div>
                     </div>
 
-                    {/* Descrição */}
                     <p
                       style={{
                         fontSize: "0.9rem",
@@ -162,7 +165,6 @@ function Experience() {
                       {exp.description}
                     </p>
 
-                    {/* Ferramentas */}
                     <div className="experience-stack mt-3 d-flex justify-content-center align-items-center flex-wrap">
                       {exp.tools.map((ToolIcon, i) => (
                         <ToolIcon
