@@ -9,6 +9,7 @@ import {
   SiMongodb,
   SiReact,
   SiPython,
+  SiSonarqube
 } from "react-icons/si";
 import { DiJava } from "react-icons/di";
 
@@ -25,8 +26,8 @@ function Experience() {
       role: "Desenvolvedor Back-end - Júnior",
       description:
         "Desenvolvimento de robôs de automação para extração e processamento de dados jurídicos, integração de APIs, tratamento de grandes volumes de dados e otimização de desempenho.",
-      tools: [DiJava, SiSpringboot, SiMysql, SiRedis, SiPython],
-      period: "11/2024 - Atual",
+        tools: [DiJava, SiSpringboot, SiMysql, SiRedis, SiPython, SiSonarqube],
+        period: "11/2024 - Atual",
       position: "left",
     },
     {
@@ -79,9 +80,8 @@ function Experience() {
             return (
               <Row
                 key={index}
-                className={`mb-5 align-items-center ${
-                  isLeft ? "justify-content-end" : "justify-content-start"
-                }`}
+                className={`mb-5 align-items-center ${isLeft ? "justify-content-end" : "justify-content-start"
+                  }`}
               >
                 <Col md={5} className="text-center">
                   <div
@@ -172,7 +172,7 @@ function Experience() {
                           title="Ferramenta utilizada"
                           className="tech-icons me-3"
                           style={{
-                            fontSize: "0.95rem",
+                            fontSize: "0.26rem",
                             color: "#c770f0",
                           }}
                         />
