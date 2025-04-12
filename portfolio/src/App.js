@@ -14,6 +14,7 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Experience from "./components/Experience/Experience";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -36,6 +37,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience/>} />
+          <Route path="/project" element={<Projects />} />
+
 
         </Routes>
         <Footer />
