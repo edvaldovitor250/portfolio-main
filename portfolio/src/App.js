@@ -8,6 +8,7 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
+  Navigate,
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
@@ -15,6 +16,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
+import Resume from "./components/Resume/ResumeNew";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -38,8 +40,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience/>} />
           <Route path="/project" element={<Projects />} />
-
-
+          <Route path="/resume" element={<Resume />} />
+          <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
       </div>
