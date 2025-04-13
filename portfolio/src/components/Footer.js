@@ -1,15 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineMail,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import socialLinks from "../config/socialLinks";
 
-function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <Container fluid className="footer">
       <Row>
@@ -17,55 +12,28 @@ function Footer() {
           <h3>Designed and Developed by Edvaldo Vitor</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} Edvaldo Vitor</h3>
+          <h3>Copyright © {currentYear} Edvaldo Vitor</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://github.com/edvaldovitor250"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="mailto:edvaldovitor250@gmail.com"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiOutlineMail />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/edvaldo-vitor/"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/vitinh081"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
+            {socialLinks.map(({ icon, url, label }, index) => (
+              <li key={index} className="social-icons">
+                <a
+                  href={url}
+                  style={{ color: "white" }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                >
+                  {icon}
+                </a>
+              </li>
+            ))}
           </ul>
         </Col>
       </Row>
     </Container>
   );
-}
+};
 
 export default Footer;
