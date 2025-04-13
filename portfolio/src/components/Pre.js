@@ -1,6 +1,14 @@
 import React from "react";
-function Pre(props) {
-  return <div id={props.load ? "preloader" : "preloader-none"}></div>;
-}
+import PropTypes from "prop-types";
+
+const Pre = ({ load }) => {
+  const preloaderId = load ? "preloader" : "preloader-none";
+
+  return <div id={preloaderId} role="status" aria-live="polite" />;
+};
+
+Pre.propTypes = {
+  load: PropTypes.bool.isRequired,
+};
 
 export default Pre;
