@@ -3,14 +3,15 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import styles from "./ProjectCards.module.css";
 
 const ProjectCards = ({ imgPath, title, description, ghLink, isBlog, demoLink }) => {
   const hasGitHubLink = Boolean(ghLink);
   const hasDemoLink = Boolean(demoLink);
 
   return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={imgPath} alt={title} />
+    <Card className={styles.projectCardView}>
+      <Card.Img className={styles.cardImgTop} variant="top" src={imgPath} alt={title} />
 
       <Card.Body>
         <Card.Title>{title}</Card.Title>
@@ -21,7 +22,7 @@ const ProjectCards = ({ imgPath, title, description, ghLink, isBlog, demoLink })
 
         {hasGitHubLink && (
           <Button
-            variant="primary"
+            className={styles.btnPrimary}
             href={ghLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -32,7 +33,7 @@ const ProjectCards = ({ imgPath, title, description, ghLink, isBlog, demoLink })
 
         {hasDemoLink && !isBlog && (
           <Button
-            variant="primary"
+            className={styles.btnPrimary}
             href={demoLink}
             target="_blank"
             rel="noopener noreferrer"

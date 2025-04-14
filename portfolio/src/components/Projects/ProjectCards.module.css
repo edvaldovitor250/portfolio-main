@@ -1,0 +1,33 @@
+.projectCardView {
+    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+    color: white;
+    background-color: transparent;
+    opacity: 0.9;
+    transition: all 0.5s ease 0s;
+    height: 100%;
+  }
+  
+  .projectCardView:hover {
+    transform: scale(1.02);
+    overflow: hidden;
+    box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
+  }
+  
+  .cardImgTop {
+    padding: 20px;
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+  
+  .btnPrimary {
+    color: #fff;
+    background-color: #623686;
+    border-color: #623686;
+  }
+  
+  .btnPrimary:hover {
+    color: #fff;
+    background-color: #6d20c5d7;
+    border-color: #6d20c5d7;
+  }
+  

@@ -1,13 +1,14 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
+import styles from "./Resume.module.css";
 
 const DownloadButton = ({ pdfLink }) => (
   <Button
     variant="primary"
     href={pdfLink}
     target="_blank"
-    style={{ maxWidth: "250px" }}
+    className={styles.downloadButton}
   >
     <AiOutlineDownload />
     &nbsp;Download CV

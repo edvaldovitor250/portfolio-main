@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/NavBar/NavBar";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import {
   BrowserRouter as Router,
   Route,
@@ -11,12 +9,17 @@ import {
   Navigate,
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Experience from "./components/Experience/Experience";
-import Projects from "./components/Projects/Projects";
-import Resume from "./components/Resume/ResumeNew";
+
+// Importando todas as rotas por meio das pages
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
+import Experience from "./pages/Experience";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -25,7 +28,6 @@ function App() {
     const timer = setTimeout(() => {
       upadateLoad(false);
     }, 1200);
-
     return () => clearTimeout(timer);
   }, []);
 
@@ -38,10 +40,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience/>} />
+          <Route path="/experience" element={<Experience />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>

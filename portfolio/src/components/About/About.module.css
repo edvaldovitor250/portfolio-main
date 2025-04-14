@@ -1,0 +1,49 @@
+.aboutSection {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  background-image: var(--section-background-color);
+  color: white;
+}
+
+.techIcons {
+  font-size: 4.5em;
+  margin: 15px;
+  padding: 10px;
+  opacity: 0.93;
+  border: 1.7px solid rgba(200, 137, 230, 0.637);
+  text-align: center;
+  border-radius: 5px;
+  display: table;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+  transition: all 0.4s ease 0s;
+}
+
+.techIcons:hover {
+  transform: scale(1.05);
+  border: 2.2px solid rgba(197, 115, 230, 0.883);
+}
+
+.quoteCardView {
+  border: none !important;
+  color: white !important;
+  background-color: transparent !important;
+  padding: 1rem !important;
+  box-shadow: none !important;
+}
+
+.aboutActivity {
+  list-style: none;
+  text-align: left;
+  padding-left: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.aboutImg {
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+
+.purple {
+  color: var(--imp-text-color);
+}

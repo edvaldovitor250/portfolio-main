@@ -1,0 +1,34 @@
+.resumeSection {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 30px;
+  background-image: var(--section-background-color);
+  color: white;
+}
+
+.resumeContainer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.downloadRow {
+  justify-content: center;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.downloadRowBottom {
+  justify-content: center;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.pdfDocument {
+  display: flex;
+  justify-content: center;
+}
+
+.downloadButton {
+  max-width: 250px;
+}

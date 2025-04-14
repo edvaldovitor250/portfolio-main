@@ -1,0 +1,44 @@
+.footer {
+    background-color: rgb(10, 4, 22);
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+  
+  .copywright {
+    text-align: center;
+  }
+  
+  .footerBody {
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .footer h3 {
+    font-size: 1em;
+    color: white;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .footerIcons {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .socialIcon {
+    display: inline-block;
+    padding: 0 15px;
+  }
+  
+  .iconLink {
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .iconLink:hover {
+    color: #87209e;
+  }
+  

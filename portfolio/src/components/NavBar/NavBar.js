@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { AiFillStar } from "react-icons/ai";
 import logo from "../../Assets/logo.png";
-import useNavBar from "../../hooks/useNavBar";
+import useNavBar from "./useNavBar";
 import navLinks from "../../data/navLinks";
 import styles from "./NavBar.module.css";
 
