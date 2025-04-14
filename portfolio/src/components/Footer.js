@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import socialLinks from "../config/socialLinks";
+import socialLinks from "../data/socialLinks"; 
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

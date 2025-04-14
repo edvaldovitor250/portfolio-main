@@ -10,7 +10,7 @@ const socialLinks = [
   {
     icon: <AiOutlineMail />,
     url: "mailto:edvaldovitor250@gmail.com",
-    label: "E-mail",
+    label: "Email",
   },
   {
     icon: <FaLinkedinIn />,
