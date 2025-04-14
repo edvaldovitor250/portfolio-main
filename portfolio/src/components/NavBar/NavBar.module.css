@@ -1,0 +1,91 @@
+.sticky {
+    background-color: #1b1a2ea9;
+    transition: all 0.3s ease-out 0s;
+    box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171);
+    backdrop-filter: blur(15px);
+  }
+  
+  .navbar {
+    position: fixed;
+    transition: all 0.3s ease-out 0s;
+    padding: 0.3rem 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .logo {
+    width: 2.5em;
+  }
+  
+  .navbarToggler {
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+  }
+  
+  .navbarToggler span {
+    display: block;
+    background-color: #be50f4;
+    height: 4px;
+    width: 27px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transform: rotate(0deg);
+    left: 0;
+    opacity: 1;
+    transition: transform 0.35s ease-in-out;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 767px) {
+    .navbar {
+      padding: 1rem 2rem;
+      font-size: 1.4rem;
+      background-color: #181a27;
+    }
+  }
+  
+  .navLink {
+    color: white;
+    padding: 0.8rem 1rem;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .navLink::after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 0;
+    border-radius: 16px;
+    background: #c95bf5;
+    bottom: 1px;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease-out 0s;
+    position: relative;
+  }
+  
+  .navLink:hover::after {
+    width: 100%;
+  }
+  
+  .forkBtn {
+    font-size: 1.1em;
+    padding-top: 10px;
+  }
+  
+  .forkBtnInner {
+    line-height: 1.4em;
+    background-color: #934cce5e;
+    padding: 0.25rem 1.1rem;
+    text-align: center;
+  }
+  
+  .forkBtnInner:hover {
+    transform: translateY(-2px);
+    background-color: #a24dd386;
+    border-color: #a24dd386;
+  }
+  
