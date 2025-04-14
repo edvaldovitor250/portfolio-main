@@ -4,8 +4,9 @@ import Particle from "../Particle";
 import Github from "./Github";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
-import Techstack from "./Techstack";
-import Toolstack from "./Toolstack";
+import techStackData from "../../data/techStack";
+import toolStackData from "../../data/toolStack";
+import TechIcons from "./TechIcons";
 
 
 function About() {
@@ -36,15 +37,14 @@ function About() {
                     </Col>
                 </Row>
                 <h1 className="project-heading">
-                    Competências  <strong className="purple">Profissionais </strong>
+                    Competências <strong className="purple">Profissionais</strong>
                 </h1>
-
-                <Techstack />
+                <TechIcons icons={techStackData} />
 
                 <h1 className="project-heading">
                     <strong className="purple">Ferramentas</strong> que utilizo
                 </h1>
-                <Toolstack />
+                <TechIcons icons={toolStackData} />
 
                 <Github />
             </Container>
