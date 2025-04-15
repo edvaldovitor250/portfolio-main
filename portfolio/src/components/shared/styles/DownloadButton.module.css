@@ -1,0 +1,19 @@
+.downloadButton {
+    max-width: 250px;
+    color: #fff;
+    background-color: #623686;
+    border-color: #623686;
+    transition: all 0.3s ease;
+  }
+  
+  .downloadButton:hover {
+    background-color: #6d20c5d7;
+    border-color: #6d20c5d7;
+    color: #fff;
+  }
+  
+  .downloadButton:focus {
+    box-shadow: none;
+    outline: none;
+  }
+  

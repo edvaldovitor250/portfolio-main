@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "../shared/ui/Card/ProjectCards";
-import Particle from "../shared/Particle";
+import ProjectCard from "../common/Card/ProjectCard"; 
+import Particle from "../common/Particle";
 import projectList from "../../data/projectList";
 import styles from "./Projects.module.css";
 

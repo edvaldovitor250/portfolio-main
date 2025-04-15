@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Preloader from "../src/components/Pre";
+import Preloader from "./components/Preloader";
 import Navbar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import {

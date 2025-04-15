@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import experiences from "../../data/experiences";
-import ExperienceCard from "./ExperienceCard";
+import ExperienceCard from "../shared/ui/Card/ExperienceCard"; // Corrigido aqui
 import styles from "./Experience.module.css";
 
 const Experience = () => (
@@ -12,7 +12,6 @@ const Experience = () => (
       </h2>
 
       <div className={styles.timelineContainer}>
-        {/* Linha da timeline */}
         <div className={styles.timelineLine}></div>
 
         {experiences.map((exp, index) => (

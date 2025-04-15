@@ -5,7 +5,7 @@ import Tilt from "react-parallax-tilt";
 import socialLinks from "../../data/socialLinks";
 import styles from "./Home.module.css";
 
-const Home2 = () => (
+const HomeIntro = () => (
   <Container fluid className={styles.homeAboutSection} id="about">
     <Container>
       <Row>
@@ -85,4 +85,4 @@ const Home2 = () => (
   </Container>
 );
 
-export default Home2;
+export default HomeIntro;

@@ -2,7 +2,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import styles from "./Home.module.css";
 
-const Type = () => (
+const TypewriterEffect = () => (
   <Typewriter
     options={{
       strings: [
@@ -20,4 +20,4 @@ const Type = () => (
   />
 );
 
-export default Type;
+export default TypewriterEffect;

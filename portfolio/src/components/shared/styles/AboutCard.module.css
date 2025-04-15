@@ -1,0 +1,19 @@
+.quoteCardView {
+    border: none !important;
+    color: white !important;
+    background-color: transparent !important;
+    padding: 1rem !important;
+    box-shadow: none !important;
+  }
+  
+  .aboutActivity {
+    list-style: none;
+    text-align: left;
+    padding-left: 1px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .purple {
+    color: var(--imp-text-color);
+  }
+  

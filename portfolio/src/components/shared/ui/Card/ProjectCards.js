@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
-import styles from "./ProjectCards.module.css";
+import styles from "../../styles/ProjectCards.module.css"; 
 
 const ProjectCards = ({ imgPath, title, description, ghLink, isBlog, demoLink }) => {
   const hasGitHubLink = Boolean(ghLink);

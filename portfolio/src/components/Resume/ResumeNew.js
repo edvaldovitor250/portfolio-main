@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import { Document, Page, pdfjs } from "react-pdf";
-import Particle from "../Particle";
-import DownloadButton from "./DownloadButton";
-import useWindowSize from "../../hooks/useWindowSize";
+import Particle from "../shared//Particle";
+import DownloadButton from "../shared/ui/Button/DownloadButton";
+import useWindowSize from "../../hooks/ui/useWindowSize";
 import pdf from "../../Assets/EdvaldoVitorCV.pdf";
 import styles from "./Resume.module.css";
 

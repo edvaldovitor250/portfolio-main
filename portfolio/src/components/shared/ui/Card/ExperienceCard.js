@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import styles from "./Experience.module.css";
+import styles from "../../styles/ExperienceCard.module.css";
 
 const ExperienceCard = ({ exp }) => {
   const isLeft = exp.position === "left";
@@ -33,7 +33,7 @@ const ExperienceCard = ({ exp }) => {
 
           <p className={styles.description}>{exp.description}</p>
 
-          <div className={`${styles.techStack} mt-3 d-flex justify-content-center align-items-center flex-wrap`}>
+          <div className={styles.techStack}>
             {exp.tools.map((ToolIcon, i) => (
               <ToolIcon
                 key={i}

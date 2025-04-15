@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
-import Particle from "../Particle";
-import Home2 from "./Home2";
-import Type from "./Type";
+import Particle from "../shared/Particle";
+import Home2 from "./HomeIntro";
+import Type from "./TypewriterEffect";
 import styles from "./Home.module.css";
 
 const Home = () => (

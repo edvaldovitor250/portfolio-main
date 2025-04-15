@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
-import styles from "./About.module.css";
+import styles from "../../styles/AboutCard.module.css"; 
 
 function AboutCard() {
   return (
@@ -10,11 +10,11 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Olá a todos, sou <span className={styles.purple}>Edvaldo Vitor </span>
-            de <span className={styles.purple}> Recife, Brasil.</span>
+            de <span className={styles.purple}>Recife, Brasil.</span>
             <br />
             Atualmente, atuo como Software Engineer na Expedit.
             <br />
-            Concluí Analista e desenvolvedor de Sistema na Uninassau.
+            Concluí Analista e Desenvolvedor de Sistemas na Uninassau.
             <br />
             <br />
             Além de programar, algumas outras atividades que adoro fazer!

@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
+import Particle from "../shared/Particle";
 import Github from "./Github";
-import Aboutcard from "./AboutCard";
+import Aboutcard from "../shared/ui/Card/AboutCard";
 import laptopImg from "../../Assets/about.png";
 import techStackData from "../../data/techStack";
 import toolStackData from "../../data/toolStack";

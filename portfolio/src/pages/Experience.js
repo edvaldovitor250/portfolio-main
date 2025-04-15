@@ -1,5 +1,5 @@
 import React from "react";
-import Particle from "../components/Particle";
+import Particle from "../components/shared/Particle";
 import ExperienceContent from "../components/Experience/Experience";
 
 const Experience = () => {
