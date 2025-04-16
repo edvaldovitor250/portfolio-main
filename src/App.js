@@ -14,22 +14,15 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// Importando todas as rotas por meio das pages
+import usePreloader from "./hooks/ui/usePreloader";
+
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Experience from "./pages/Experience";
-
-function App() {
-  const [load, upadateLoad] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-    return () => clearTimeout(timer);
-  }, []);
+const App = () => {
+  const load = usePreloader();
 
   return (
     <Router>
