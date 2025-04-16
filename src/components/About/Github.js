@@ -3,7 +3,7 @@ import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
 import styles from "./About.module.css";
 
-function Github() {
+const Github = () => {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>

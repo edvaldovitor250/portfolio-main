@@ -5,7 +5,7 @@ import Particle from "../common/Particle";
 import projectList from "../../data/projectList";
 import styles from "./Projects.module.css";
 
-function Projects() {
+const Projects = () => {
   return (
     <Container fluid className={styles.projectSection}>
       <Particle />

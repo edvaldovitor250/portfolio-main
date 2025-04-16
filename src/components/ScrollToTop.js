@@ -1,6 +1,6 @@
 import useScrollToTop from "../hooks/ui/useScrollToTop";
 
-function App() {
+const App = ()  => {
   useScrollToTop();
 
   return (

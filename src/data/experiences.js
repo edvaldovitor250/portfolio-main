@@ -2,7 +2,6 @@ import { DiJava } from "react-icons/di";
 import {
   SiSpringboot,
   SiMysql,
-  SiGit,
   SiVisualstudiocode,
   SiRedis,
   SiMongodb,

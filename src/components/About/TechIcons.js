@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import styles from "./About.module.css";
 
-function TechIcons({ icons = [] }) {
+const TechIcons = ({ icons = [] }) => {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       {icons.map((Icon, index) => (

@@ -9,7 +9,7 @@ import toolStackData from "../../data/toolStack";
 import TechIcons from "./TechIcons";
 import styles from "./About.module.css";
 
-function About() {
+const About = () => {
   return (
     <Container fluid className={styles.aboutSection}>
       <Particle />
