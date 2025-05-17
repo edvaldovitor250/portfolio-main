@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../shared/Particle";
 import Github from "./Github";
@@ -15,20 +14,42 @@ const About = () => {
     <Container fluid className={styles.aboutSection}>
       <Particle />
       <Container>
-        {/* ...bloco existente... */}
+
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Col
+            md={7}
+            style={{
+              justifyContent: "center",
+              paddingTop: "30px",
+              paddingBottom: "50px",
+            }}
+          >
+            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+              Sabia quem <strong className={styles.purple}>sou eu</strong>
+            </h1>
+            <Aboutcard />
+          </Col>
+          <Col md={5} className={styles.aboutImg}>
+            <img src={laptopImg} alt="Sobre mim" className="img-fluid" />
+          </Col>
+        </Row>
+
+        <h1 className="project-heading">
+          Competências <strong className={styles.purple}>Profissionais</strong>
+        </h1>
+        <TechIcons icons={techStackData} />
 
         <h1 className="project-heading">
           <strong className={styles.purple}>Ferramentas</strong> que utilizo
         </h1>
         <TechIcons icons={toolStackData} />
 
-        {/* Nova seção de Certificações */}
         <h1 className="project-heading">
           Minhas <strong className={styles.purple}>Certificações</strong>
         </h1>
         <Row style={{ justifyContent: "center", padding: "20px 0" }}>
           <Col xs={12} md={4} style={{ textAlign: "center" }}>
-          <img
+            <img
               src={certImg}
               alt="Oracle Certification"
               style={{ maxWidth: "150px", width: "100%" }}
@@ -39,6 +60,7 @@ const About = () => {
         </Row>
 
         <Github />
+
       </Container>
     </Container>
   );
