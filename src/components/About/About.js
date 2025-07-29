@@ -8,6 +8,7 @@ import toolStackData from "../../data/toolStack";
 import TechIcons from "./TechIcons";
 import styles from "./About.module.css";
 import certImg from "../../Assets/certificate/oracle-certificacao.png";
+import certImg2 from "../../Assets/certificate/oracle-certicacao2.png";
 
 const About = () => {
   return (
@@ -47,17 +48,38 @@ const About = () => {
         <h1 className="project-heading">
           Minhas <strong className={styles.purple}>Certificações</strong>
         </h1>
-        <Row style={{ justifyContent: "center", padding: "20px 0" }}>
-          <Col xs={12} md={4} style={{ textAlign: "center" }}>
-            <img
-              src={certImg}
-              alt="Oracle Certification"
-              style={{ maxWidth: "150px", width: "100%" }}
-              className="img-fluid mb-3"
-            />
-            <p>Oracle Certified Foundations Associate 2025</p>
-          </Col>
-        </Row>
+        <Row
+  style={{
+    justifyContent: "center",
+    alignItems: "flex-start",
+    padding: "20px 0",
+    gap: "40px"
+  }}
+>
+  <Col xs={12} md={4} style={{ textAlign: "center", marginBottom: "32px" }}>
+    <img
+      src={certImg}
+      alt="Oracle Certification"
+      className={`${styles.certImgGrande} img-fluid mb-3`}
+    />
+    <p style={{ marginTop: "16px", fontSize: "1rem", minHeight: "48px" }}>
+      Oracle Certified Foundations Associate 2025
+    </p>
+  </Col>
+  <Col xs={12} md={4} style={{ textAlign: "center", marginBottom: "32px" }}>
+    <img
+      src={certImg2}
+      alt="Oracle Certification"
+      className={`${styles.certImgPequena} img-fluid mb-3`}
+    />
+    <p style={{ marginTop: "16px", fontSize: "1rem", minHeight: "48px" }}>
+      Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate
+    </p>
+  </Col>
+</Row>
+
+
+
 
         <Github />
 

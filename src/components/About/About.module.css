@@ -6,6 +6,23 @@
   color: white;
 }
 
+.certImgGrande {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.certImgPequena {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
 .techIcons {
   font-size: 4.5em;
   margin: 15px;
