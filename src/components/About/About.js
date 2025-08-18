@@ -9,6 +9,7 @@ import TechIcons from "./TechIcons";
 import styles from "./About.module.css";
 import certImg from "../../Assets/certificate/oracle-certificacao.png";
 import certImg2 from "../../Assets/certificate/oracle-certicacao2.png";
+import certImg3 from "../../Assets/certificate/oracle-certicaca3.png";
 
 const About = () => {
   return (
@@ -48,35 +49,52 @@ const About = () => {
         <h1 className="project-heading">
           Minhas <strong className={styles.purple}>Certificações</strong>
         </h1>
-        <Row
+      
+<Row
   style={{
     justifyContent: "center",
     alignItems: "flex-start",
     padding: "20px 0",
-    gap: "40px"
+    gap: "40px",
   }}
 >
   <Col xs={12} md={4} style={{ textAlign: "center", marginBottom: "32px" }}>
     <img
       src={certImg}
-      alt="Oracle Certification"
+      alt="Oracle Certified Foundations Associate 2025"
       className={`${styles.certImgGrande} img-fluid mb-3`}
+      style={{ width: 105, height: "auto", border: "none", outline: "none", boxShadow: "none" }}
     />
     <p style={{ marginTop: "16px", fontSize: "1rem", minHeight: "48px" }}>
       Oracle Certified Foundations Associate 2025
     </p>
   </Col>
+
   <Col xs={12} md={4} style={{ textAlign: "center", marginBottom: "32px" }}>
     <img
       src={certImg2}
-      alt="Oracle Certification"
+      alt="Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate"
       className={`${styles.certImgPequena} img-fluid mb-3`}
+      style={{ width: 225, height: "auto", border: "none", outline: "none", boxShadow: "none" }}
     />
     <p style={{ marginTop: "16px", fontSize: "1rem", minHeight: "48px" }}>
       Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate
     </p>
   </Col>
+
+  <Col xs={12} md={4} style={{ textAlign: "center", marginBottom: "32px" }}>
+    <img
+      src={certImg3}
+      alt="Oracle Data Platform 2025 Certified Foundations Associate"
+      className={`${styles.certImgPequena} img-fluid mb-3`}
+      style={{ width: 225, height: "auto", border: "none", outline: "none", boxShadow: "none" }}
+    />
+    <p style={{ marginTop: "16px", fontSize: "1rem", minHeight: "48px" }}>
+      Oracle Data Platform 2025 Certified Foundations Associate
+    </p>
+  </Col>
 </Row>
+
 
 
 
